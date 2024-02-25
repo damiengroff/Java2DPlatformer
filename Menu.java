@@ -1,14 +1,12 @@
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
-import java.io.*;
 import java.net.URL;
 
 public class Menu extends JFrame implements ActionListener {
 	
 	private JButton start;
 	private JButton regles;
-	private Window fenetreJeu;
 	private boolean appuiBoutonRegles;
 	private Audio music;
 	
@@ -18,9 +16,7 @@ public class Menu extends JFrame implements ActionListener {
 	public Menu() {
 		
 		URL url = this.getClass().getClassLoader().getResource
-        ("./Musiques/menu_music.wav");
-		System.out.print("test");
-		System.out.print(url);
+        ("Musiques/menu_music.wav");
 		music = new Audio(url);
 		
 		music.jouer();

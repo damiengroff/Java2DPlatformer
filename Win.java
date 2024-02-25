@@ -64,7 +64,7 @@ public class Win extends JFrame implements ActionListener{
         
         
         URL url = this.getClass().getClassLoader().getResource
-        ("./Musiques/win.wav");
+        ("Musiques/win.wav");
 		music = new Audio(url);
         music.jouer();
         

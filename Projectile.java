@@ -26,7 +26,7 @@ public class Projectile {
 		double distX = cX-pX;
 		double dist = Math.sqrt(Math.pow(distX,2) + Math.pow(distY,2));
 		
-		speed = 2;
+		speed = 10;
 		speedX = (speed * distX)/dist;
 		speedY = (speed * distY)/dist;	
 	}

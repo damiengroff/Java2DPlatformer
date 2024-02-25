@@ -44,10 +44,10 @@ public class Window extends JFrame implements KeyListener, MouseListener {
 		
 		int n = soundEffects.length;
         URL[] url = new URL[n];
-        url[0] = this.getClass().getClassLoader().getResource("./Musiques/music.wav");
-        url[1] = this.getClass().getClassLoader().getResource("./Musiques/fireball.wav");
-        url[2] = this.getClass().getClassLoader().getResource("./Musiques/jump.wav");
-        url[3] = this.getClass().getClassLoader().getResource("./Musiques/step.wav");
+        url[0] = this.getClass().getClassLoader().getResource("Musiques/music.wav");
+        url[1] = this.getClass().getClassLoader().getResource("Musiques/fireball.wav");
+        url[2] = this.getClass().getClassLoader().getResource("Musiques/jump.wav");
+        url[3] = this.getClass().getClassLoader().getResource("Musiques/step.wav");
 		for(int i=0; i<n; i++) {
 			soundEffects[i] = new Audio(url[i]);
 		}

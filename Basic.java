@@ -1,6 +1,4 @@
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.util.ArrayList;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
@@ -11,8 +9,6 @@ import java.net.URL;
 public class Basic extends Obstacles {
 	
 	public boolean dead = false;	// statut de l'ennemi
-	private int initPosX;
-	private int initPosY;
 	private int speed = 1;
 	private int fallTimer = 0;		// duree de chute (gravite)
 	private int respawnDelay = 0;	// duree avant reaparition
@@ -30,8 +26,8 @@ public class Basic extends Obstacles {
 	 */
 	public Basic(int posX, int posY) {
 		super (posX, posY, 34, 62);
-		initPosX = posX;
-		initPosY = posY;
+		//initPosX = posX;
+		//initPosY = posY;
 		
 		// on charge les images
 		try {
@@ -46,8 +42,8 @@ public class Basic extends Obstacles {
 		
 		int n = soundEffects.length;
         URL[] url = new URL[n];
-        url[0] = this.getClass().getClassLoader().getResource("./Musiques/hurt.wav");
-        url[1] = this.getClass().getClassLoader().getResource("./Musiques/e_die.wav");
+        url[0] = this.getClass().getClassLoader().getResource("Musiques/hurt.wav");
+        url[1] = this.getClass().getClassLoader().getResource("Musiques/e_die.wav");
 		for(int i=0; i<n; i++) {
 			soundEffects[i] = new Audio(url[i]);
 		}

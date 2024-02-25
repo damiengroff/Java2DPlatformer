@@ -51,7 +51,7 @@ public class GameOver extends JFrame implements ActionListener {
 		add(conteneurGameOver);
         
         URL url = this.getClass().getClassLoader().getResource
-        ("./Musiques/defeat.wav");
+        ("Musiques/defeat.wav");
 		music = new Audio(url);
         
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

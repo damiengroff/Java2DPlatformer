@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.util.ArrayList;
-import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 
@@ -43,7 +42,7 @@ public class Jeu implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		
 			drawDelay++;
-			
+
 			joueur.move(listeObstacles);
 			
 			/*if(joueur.speed!=0 && joueur.isCollisionBas(listeObstacles)) 
@@ -63,8 +62,8 @@ public class Jeu implements ActionListener {
 					listeProj.remove(i);
 				}
 			}
-			
-			if (drawDelay%16==0) {	// 63 fps
+
+			if (drawDelay%1==0) {	// 63 fps
 				f.refresh();
 				drawDelay=0;
 			}
